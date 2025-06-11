@@ -30,9 +30,7 @@ do -- require "table", "ndarray", "grid"
             math.floor(obj.height / obj.cell_size + 1),
             math.floor(obj.width  / obj.cell_size  + 1)
         }
-        print(1)
         obj.grid = table.tools.Grid2D:create(shape, obj.xmin, obj.xmax, obj.ymin, obj.ymax)
-        print(2)
         obj.samples = {}       -- Список сгенерированных точек { {x, y}, ... }
         obj.active_list = {}   -- Активный список точек для обработки
         return obj
