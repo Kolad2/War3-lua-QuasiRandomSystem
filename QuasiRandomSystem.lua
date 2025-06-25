@@ -6,7 +6,7 @@ function QuasiRandomSystem(rect, min_distance)
     local maxy = GetRectMaxY(rect)
     local min_distance = min_distance or 1000
     -------------------------------------------------------------------------------
-    local samples = BridsonDiskSampling(minx, maxx, miny, maxy, min_distance, 10):generate()
+    local samples = BridsonDiskSampling(minx, maxx, miny, maxy, min_distance):generate()
     table.shuffle(samples)
     return samples
 end
